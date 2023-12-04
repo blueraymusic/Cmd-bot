@@ -105,4 +105,33 @@ By default, computer will prompt the user before executing commands.
 
 Since v.0.2, the safety switch setting moved to computer.yaml; the old ~/.computer-safety-off is not used anymore.
 
-To have computer run commands right away when they come ba
+To have computer run commands right away when they come:
+
+Examples:
+# Cmd-bot Examples
+
+Here are a couple of examples of how this utility can be used.
+
+computer what's the time?
+computer what's the time in UTC?
+computer what's the date and time in Vienna, Austria?
+computer show me some unicode characters
+computer what is my username and what's my machine name?
+computer is there a nano process running
+computer download the homepage of ycombinator.com and store it in index.html
+computer find all unique URLs in index.html
+computer create a file named test.txt and write my username into it
+computer print the contents of the test.txt file
+computer -a delete the test.txt file
+computer what's the current price of Bitcoin in USD
+computer what's the current price of Bitcoin in USD. Extract the price only
+computer look at the SSH logs to see if any suspicious logons occurred
+computer look at the SSH logs and show me all recent logins
+computer is the user hacker logged on right now?
+computer do I have a firewall running?
+computer create a hostnames.txt file and add 10 typical hostnames based on planet names to it, line by line; then show me the contents
+computer find any file with the name yolo.py. Do not show permission denied errors
+computer write a new bash script file called scan.sh, with the contents to iterate over hostnames.txt and invoke a default nmap scan on each host; then show me the file.
+computer write a new bash script file called scan.sh, with the contents to iterate over hostnames.txt and invoke a default nmap scan on each host; then show me the file. Make it over multiple lines with comments and annotations.
+
+Thanks!
