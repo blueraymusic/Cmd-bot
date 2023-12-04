@@ -28,25 +28,26 @@ Current configuration per computer.yaml:
 * Safety       : on
 Happy Hacking!
 
-Installation on Linux and macOS
+#Installation on Linux and macOS
 
-git clone https://github.com/blueraymusic/Cmd-bot
-cd Cmd-bot
-pip3 install -r requirements.txt
-chmod +x computer.py
-alias computer=$(pwd)/computer.py
-alias yolo=$(pwd)/computer.py #optional
+    - git clone https://github.com/blueraymusic/Cmd-bot
+    - cd Cmd-bot
+    - pip3 install -r requirements.txt
+    - chmod +x computer.py
+    - alias computer=$(pwd)/computer.py
+    - alias yolo=$(pwd)/computer.py #optional
 
-computer show me some funny unicode characters
+try: computer show me some funny unicode characters
 OpenAI API Key configuration
 
 There are three ways to configure the key on Linux and macOS:
 
-You can either export OPENAI_API_KEY=<yourkey> or have a .env file in the same directory as computer.py with OPENAI_API_KEY="<yourkey>" as a line
-Create a file at ~/.openai.apikey with the key in it
-Add the key to the computer.yaml configuration file
-Aliases
+a) You can either export OPENAI_API_KEY=<yourkey> or have a .env file in the same directory as computer.py with OPENAI_API_KEY="<yourkey>" as a line
+b) Create a file at ~/.openai.apikey with the key in it
+c) Add the key to the computer.yaml configuration file
 
+
+#Aliases
 To set the alias, like computer or yolo on each login, add them to .bash_aliases (or .zshrc on macOS) file. Make sure the path is the one you want to use.
 
 echo "alias computer=$(pwd)/computer.py"     >> ~/.bash_aliases
@@ -60,14 +61,17 @@ Creates two aliases computer and yolo pointing to ~/combot/computer.py
 Adds the aliases to the ~/.bash_aliases or ~/.zshrc file
 That's it for Linux and macOS. Now make sure you have an OpenAI API key set.
 
-Windows Installation
+
+
+#Windows Installation
 
 On Windows, you can run .\install.bat (or double-click) after cloning the repo. By default, it does the following:
 
 Copies the necessary files to ~\combot\
 Creates a computer.bat file in ~ that lets you run equivalent to python.exe ~\combot\computer.py
-You also have the option to:
 
+- You also have the option to:
+- 
 Change the location where combot\ and computer.bat will be created
 Skip creating combot\ and use the folder of the cloned repository instead.
 Create a .openai.apikey file in your ~ directory
