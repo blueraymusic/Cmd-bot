@@ -1,7 +1,7 @@
 # Cmd-bot
 
 # Computer Demo
-
+![Image](https://github.com/blueraymusic/Cmd-bot/assets/83096078/cfc199a3-bf06-4b67-a59c-2022d2a19368)
 
 Update computer v0.2 - Support for GPT-4 API
 
