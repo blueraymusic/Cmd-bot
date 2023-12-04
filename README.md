@@ -71,7 +71,7 @@ Copies the necessary files to ~\combot\
 Creates a computer.bat file in ~ that lets you run equivalent to python.exe ~\combot\computer.py
 
 - You also have the option to:
-- 
+  
 Change the location where combot\ and computer.bat will be created
 Skip creating combot\ and use the folder of the cloned repository instead.
 Create a .openai.apikey file in your ~ directory
