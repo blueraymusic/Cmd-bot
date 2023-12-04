@@ -120,7 +120,7 @@ def get_os_friendly_name():
 
 def set_api_key():
   dotenv.load_dotenv()
-  openai.api_key = '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'
+  openai.api_key = 'YOUR_API_KEY'
   
   # Place a ".openai.apikey" in the home directory that holds the line:
   #   <yourkey>
