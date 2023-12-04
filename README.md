@@ -1,6 +1,6 @@
 # Cmd-bot
 
-# computer Demo
+# Computer Demo
 
 
 Update computer v0.2 - Support for GPT-4 API
