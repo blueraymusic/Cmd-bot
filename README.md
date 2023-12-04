@@ -55,8 +55,8 @@ Installation script
 
 Another option is to run source install.sh after cloning the repo. That does the following:
 
-Copies the necessary files to ~/Cmd-bot/
-Creates two aliases computer and yolo pointing to ~/Cmd-bot/computer.py
+Copies the necessary files to ~/combot/
+Creates two aliases computer and yolo pointing to ~/combot/computer.py
 Adds the aliases to the ~/.bash_aliases or ~/.zshrc file
 That's it for Linux and macOS. Now make sure you have an OpenAI API key set.
 
@@ -64,12 +64,12 @@ Windows Installation
 
 On Windows, you can run .\install.bat (or double-click) after cloning the repo. By default, it does the following:
 
-Copies the necessary files to ~\Cmd-bot\
-Creates a computer.bat file in ~ that lets you run equivalent to python.exe ~\computer-ai-cmdbot\computer.py
+Copies the necessary files to ~\combot\
+Creates a computer.bat file in ~ that lets you run equivalent to python.exe ~\combot\computer.py
 You also have the option to:
 
-Change the location where Cmd-bot\ and computer.bat will be created
-Skip creating Cmd-bot\ and use the folder of the cloned repository instead.
+Change the location where combot\ and computer.bat will be created
+Skip creating combot\ and use the folder of the cloned repository instead.
 Create a .openai.apikey file in your ~ directory
 That's it basically.
 
