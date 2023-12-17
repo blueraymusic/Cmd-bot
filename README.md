@@ -75,12 +75,12 @@ Creates a computer.bat file in ~ that lets you run equivalent to `python.exe ~\c
   
 Change the location where combot\ and computer.bat will be created
 Skip creating combot\ and use the folder of the cloned repository instead.
-Create a .openai.apikey file in your ~ directory
+Create a `.openai.apikey` file in your ~ directory
 That's it basically.
 
 OpenAI API Key Configuration on Windows
 
-On Windows, export OPENAI_API_KEY=<yourkey> will not work instead:
+On Windows, export `OPENAI_API_KEY=<yourkey>` will not work instead:
 
 Run `$env:OPENAI_API_KEY="<yourkey>"` to set the key for that terminal
 Or, Run PowerShell as an administrator and run `setx OPENAI_API_KEY "<yourkey>"`
