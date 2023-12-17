@@ -29,7 +29,7 @@ Current configuration per computer.yaml:
 ```
 Happy Hacking!
 
-#Installation on Linux and macOS
+## Installation on Linux and macOS
 
     - git clone https://github.com/blueraymusic/Cmd-bot
     - cd Cmd-bot
@@ -48,7 +48,7 @@ b) Create a file at `~/.openai.apikey` with the key in it
 c) Add the key to the `computer.yaml` configuration file
 
 
-#Aliases
+## Aliases
 To set the alias, like computer or yolo on each login, add them to .bash_aliases (or .zshrc on macOS) file. Make sure the path is the one you want to use.
 ```
 echo "alias computer=$(pwd)/computer.py"     >> ~/.bash_aliases
@@ -64,7 +64,7 @@ That's it for Linux and macOS. Now make sure you have an OpenAI API key set.
 
 
 
-#Windows Installation
+## Windows Installation
 
 On Windows, you can run .\install.bat (or double-click) after cloning the repo. By default, it does the following:
 
