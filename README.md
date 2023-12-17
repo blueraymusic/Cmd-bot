@@ -151,4 +151,11 @@ Here are a couple of examples of how this utility can be used.
     - computer -c what is a rainbow? 
     - computer -c what is the second law of newton?
 
+# Info
+Type in:
+```
+computer -i
+```
+To get more information regarding the bot
+
 Thanks!
