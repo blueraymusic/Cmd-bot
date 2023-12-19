@@ -20,6 +20,9 @@ Argument: -a: Prompt the user before running the command (only useful when safet
 Argument: -c: Prompt the user before running the command (useful when safety is off)
 //Important: this argument also takes nlp prompt (.e.g what is a rainbow?)
 
+- computer [-i] list the information
+Argument: -i: this argument does not need prompt (.e.g computer -i)
+
 
 Current configuration per computer.yaml:
 * Model        : gpt-3.5-turbo
@@ -36,7 +39,6 @@ Happy Hacking!
     - pip3 install -r requirements.txt
     - chmod +x computer.py
     - alias computer=$(pwd)/computer.py
-    - alias yolo=$(pwd)/computer.py #optional
 
 try: computer show me some funny unicode characters
 OpenAI API Key configuration
@@ -49,16 +51,15 @@ c) Add the key to the `computer.yaml` configuration file
 
 
 ## Aliases
-To set the alias, like computer or yolo on each login, add them to .bash_aliases (or .zshrc on macOS) file. Make sure the path is the one you want to use.
+To set the alias, like computer on each login, add them to .bash_aliases (or .zshrc on macOS) file. Make sure the path is the one you want to use.
 ```
 echo "alias computer=$(pwd)/computer.py"     >> ~/.bash_aliases
-echo "alias yolo=$(pwd)/computer.py" >> ~/.bash_aliases
 Installation script
 ```
 Another option is to run `source install.sh` after cloning the repo. That does the following:
 
 Copies the necessary files to `~/combot/`
-Creates two aliases computer and yolo pointing to `~/combot/computer.py`
+Creates alias computer pointing to `~/combot/computer.py`
 Adds the aliases to the `~/.bash_aliases or ~/.zshrc` file
 That's it for Linux and macOS. Now make sure you have an OpenAI API key set.
 
@@ -143,7 +144,7 @@ Here are a couple of examples of how this utility can be used.
 - computer is the user hacker logged on right now?
 - computer do I have a firewall running?
 - computer create a hostnames.txt file and add 10 typical hostnames based on planet names to it, line by line; then show me the contents
-- computer find any file with the name yolo.py. Do not show permission denied errors
+- computer find any file with the name computer.py. Do not show permission denied errors
 - computer write a new bash script file called scan.sh, with the contents to iterate over hostnames.txt and invoke a default nmap scan on each host; then show me the file.
 - computer write a new bash script file called scan.sh, with the contents to iterate over hostnames.txt and invoke a default nmap scan on each host; then show me the file. Make it over multiple lines with comments and annotations.
 ```
