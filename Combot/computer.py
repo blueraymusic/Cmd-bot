@@ -25,6 +25,11 @@ def read_config() -> any:
   computer_path = os.path.abspath(__file__)
   prompt_path = os.path.dirname(computer_path)
 
+  root_file = os.path.join(prompt_path, "root.yaml")
+  with open(root_file, 'r') as file:
+    global root_data
+    root_data = yaml.safe_load(file)
+    
   config_file = os.path.join(prompt_path, "computer.yaml")
   with open(config_file, 'r') as file:
     return yaml.safe_load(file)
@@ -228,16 +233,21 @@ def missing_posix_display():
 def prompt_user_input(response):
   print("Command: " + colored(response, 'blue'))
   #print(config["safety"])
+  remove = False
+  delete = ("rm", "delete", "remove", "reboot", "shutdown", "passwd", "chown", "adduser", "sudo systemctl reboot", "restart", "sudo reboot", "sudo shutdown -r", "sudo launchctl reboot", "sudo init 6")
+  if response.lower().startswith(delete):
+    remove = True
 
-  if bool(config["safety"]) == True or ask_flag == True:
+  if bool(config["safety"]) == True or ask_flag == True or remove == True:
     prompt_text = "Execute command? [Y]es [n]o [m]odify [c]opy to clipboard ==> "
     if os.name == "posix" and missing_posix_display():
         prompt_text =  "Execute command? [Y]es [n]o [m]odify ==> "
     print(prompt_text, end = '')
     user_input = input()
+    remove = False 
     return user_input 
   
-  if config["safety"] == False:
+  if config["safety"] == False or remove == False:
      return "Y"
 
 
@@ -270,6 +280,9 @@ def evaluate_input(user_input, command):
 
 
   if user_input.upper() == "Y" or user_input == "":
+    if root_data["pass"] != "":
+      command = f'echo {root_data["pass"]} | sudo -S {command}'
+      
     if shell == "powershell.exe":
       subprocess.run([shell, "/c", command], shell=False)  
     else: 
