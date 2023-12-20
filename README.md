@@ -157,6 +157,18 @@ Type in:
 ```
 computer -i
 ```
+
+Additional:
+To enable total and complete access for optimal use, you can put your root password in the root.yaml:
+```
+.\root.yaml
+```
+change pass by the root password, as follows:
+```
+pass: PASSWORD
+```
+
+
 To get more information regarding the bot
 
 Thanks!
