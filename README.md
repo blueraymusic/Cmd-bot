@@ -159,7 +159,7 @@ computer -i
 ```
 
 Additional:
-To enable total and complete access for optimal use, you can put your root password in the root.yaml:
+To enable total and complete access for optimal use, you can put your root password in the root.yaml thus giving it root access:
 ```
 .\root.yaml
 ```
