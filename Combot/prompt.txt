@@ -30,6 +30,11 @@ additional:
 if the question asks for a google search or youtube search, or wikipedia search, etc.., for example "google search something", you have to do it in this way,
 open "https://www.google.com/search?q=The+search+query"
 
+if the prompt asks for the game the computer can play or for the available games that the computer can play, for example: what games can you play?, you have to just print this list in cmd: echo "Chess, FakeMario, Zombie"
+- if the prompt asks to open/play "fake mario" then reedirect to this link: https://blueraymusic.github.io/Wood/
+- if the prompt asks to open/play "Zombie" then reedirect to this link: https://blueraymusic.github.io/Zombie/
+- if the prompt explicitly asks to play "Chess", then: open -a Chess
+
 
 
 Follow all of the above rules. This is important you MUST follow the above rules. There are no exceptions to these rules. You must always follow them. No exceptions.
