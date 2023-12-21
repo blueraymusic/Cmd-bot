@@ -165,7 +165,7 @@ To enable total and complete access for optimal use, you can put your root passw
 ```
 change pass by the root password, as follows:
 ```
-pass: PASSWORD
+pass: nopass
 ```
 
 
