@@ -280,7 +280,7 @@ def evaluate_input(user_input, command):
 
 
   if user_input.upper() == "Y" or user_input == "":
-    if root_data["pass"] != "":
+    if root_data["pass"] != "nopass":
       command = f'echo {root_data["pass"]} | sudo -S {command}'
       
     if shell == "powershell.exe":
