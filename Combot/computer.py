@@ -10,7 +10,7 @@ import dotenv
 import distro
 import yaml
 import pyperclip
-import loggin
+#import loggin
 import json
 from datetime import datetime
 from termcolor import colored
@@ -316,9 +316,11 @@ print()
 evaluate_input(user_input, res_command)
 print("")
 
+"""
 #test with default set data
 osname = platform.system()
 architecture = platform.architecture()
 release = platform.release()
 
 loggin.log_chat_info(user,str(res_command), osname, architecture, release)
+"""
