@@ -1,7 +1,9 @@
 # Simple installer for the cmd bot
-
 echo "Hello. Installing Computer bot..."
 echo "- Creating cmd-bot in home directory..."
+echo "-----"
+echo "Python should be installed --- (!)"
+
 TARGET_DIR=~/cmd-bot
 TARGET_FULLPATH=$TARGET_DIR/computer.py
 mkdir -p $TARGET_DIR
