@@ -6,6 +6,15 @@ if not exist %~dp0\computer.py ( echo `computer.py` missing in %~dp0 cannot inst
 if not exist %~dp0\prompt.txt ( echo `prompt.txt` missing in %~dp0 cannot install & goto :choice_default_3 ) 
 if not exist %~dp0\computer.yaml ( echo `computer.yaml` missing in %~dp0 cannot install & goto :choice_default_3 ) 
 
+:: Install Python packages
+echo Installing Python packages...
+pip install -r %~dp0\requirements.txt
+
+:: Handle installation error
+if %errorlevel% neq 0 (
+    echo Error installing Python packages. Please check your internet connection and try again.
+)
+
 
 :: Note: "~" or %HOME% is equivalent to "%HOMEDRIVE%%HOMEPATH%\" but the latter is set in VM environments (from what I can tell)
 :: INSTALL_DIR = Directory the "computer-ai-cmdbot\" will go to.
